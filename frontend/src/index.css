@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: "Poppins", "sans-serif";
+  }
+  body {
+    background-color: #fdfeff;
+    overflow-x: hidden;
+  }
+}
+
+@layer components{
+  .input-box {
+    width: 100%;
+    font-size: 0.875rem; /* text-sm */
+    background-color: transparent;
+    border-width: 1.5px;
+    padding: 0.75rem 1.25rem; /* py-3 px-5 */
+    border-radius: 0.25rem; /* rounded */
+    margin-bottom: 1rem; /* mb-4 */
+    border-color: rgb(209, 213, 219); /* border-gray-300 */
+    outline: none;
+  }
+  .btn-primary {
+    width: 100%;
+    font-size: 1rem; /* text-sm */
+    background-color: rgb(56, 189, 248); /* bg-sky-400 */
+    color: white;
+    padding: 0.5rem; /* p-2 */
+    border-radius: 0.25rem; /* rounded */
+    margin-top: 0.25rem; /* my-1 */
+    margin-bottom: 0.25rem;
+    transition: background-color 0.2s;
+  }
+  .btn-primary:hover {
+    background-color: rgb(14, 165, 233); /* hover:bg-sky-500 */
+  }
+  .icon-btn {
+    font-size: 1.25rem; /* text-xl */
+    color: rgb(203, 213, 225); /* text-slate-300 */
+    cursor: pointer;
+  }
+  
+  .icon-btn:hover {
+    color: rgb(14, 165, 233); /* hover:text-sky-400 */
+  }
+  
+  .input-label{
+    font-size: 0.75rem;
+    color:rgb(148, 163, 184);
+  }
+}
